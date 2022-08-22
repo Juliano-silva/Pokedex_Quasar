@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Pokemon';
+  src: url('../Arquivos/font/PokemonSolid.ttf') format('truetype');
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #1D1d42;
+  color: white;
+}
+#Pokemon{
+  height: 25em;
+  width: 22em;
+  list-style: none;
+  border-radius: 20px;
+  background: #2f2f72;
+  border: 1px solid transparent;
+}
+#NomePoke{
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: -20px;
+  font-variant: small-caps;
+  color: yellow;
+}
+#pokedex{
+  display: inline-block;
+  padding: 1em;
+  margin-left: 4.5%;
+  margin-top: 10px;
+}
+.Container{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+#imagePokemon > img{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 13em;
+  height: 12em;
+  border-radius: 50%;
+  background-image: url(../Arquivos/WhatIsPokemon.jpeg);
+  background-size: cover;
+}
+#Header{
+  font-family: 'Pokemon';
+  text-align: center;
+  background: yellow;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0);
+  height: 10em;
+}
+#Type{
+  border:  1px solid transparent;
+  text-align: center;
+  width: 60%;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: auto;
+  background: #2a2a55;
+  font-variant: small-caps;
+  font-style: oblique;
+  color: rgb(209, 209, 201);
+}
+#id{
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+#Ocultar{
+  display: none;
+  border: 1px solid transparent;
+  margin-top: 10px;
+}
+#Pokemon:hover{
+  display: inline-block;
+}
+#Pokemon:hover > #Ocultar{
+  display: inline-block;
+}
+#Pokemon:hover > #Ocultar:nth-child(4){
+  font-variant: small-caps;
+  width: 50%;
+  font-size: 20px;
+  color: yellow;
+  height: 12em;
+  margin-left: 20px;
+}
+#Pokemon:hover > #Ocultar:nth-child(5){
+  width: 2%;
+  position: absolute;
+  color: yellow;
+  font-size: 20px;
+}
+#Pokemon:hover > #Ocultar:nth-child(7),#Pokemon:hover > #Ocultar:nth-child(8){
+  display: block;
+  background-image: linear-gradient(red,white);
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0);
+  text-align: center;
+  width: 60%;
+  font-size: 25px;
+  margin: auto;
+}
+#Pokemon:hover > #NomePoke,#Pokemon:hover > #imagePokemon,#Pokemon:hover > #id,#Pokemon:hover > #Type{
+  display: none;
+}
